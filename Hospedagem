@@ -72,12 +72,14 @@ public class Hospedagem {
                 System.out.println("Erro ao fazer a reserva, dinheiro insuficiente.");
             }else{
             System.out.println("Reserva efetuada com sucesso.");
+            System.out.println("");
             System.out.println("====RESUMO====");
             System.out.println("Nome: " +this.getHospede().getNome());
             System.out.println("Whats: " +hospede.getWhatsapp());
             System.out.println("Data Inicio: " +this.dataIni);
             System.out.println("Data Fim: " +this.dataFim);
             System.out.println("Preco: "+quarto.getPreco());
+            System.out.println("==============");
             }            
         }
 }
