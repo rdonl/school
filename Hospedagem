@@ -1,0 +1,53 @@
+public class Hospedagem {
+    private int id;
+    private Cliente hospede;
+    private Chale quarto;
+    private String dataIni;
+    private String dataFim;
+    private int qtdPessoas;
+    private Cliente titular = new Cliente();
+    
+    
+        public int getId(){
+            return id;
+        }
+        public void setId(int id){
+            this.id = id;
+        }
+        
+        public Cliente getHospede(){
+            return hospede;
+        }
+        public void setHospede(Cliente hospede){
+            this.hospede = hospede;
+        }
+        
+        public Chale getQuarto(){
+            return quarto;
+        } 
+        public void setQuarto(Chale quarto){
+            this.quarto = quarto;
+        }
+        
+        public String getdataIni(){
+            return dataIni;
+        }
+        public void setdataIni(String dataIni){
+            this.dataIni = dataIni;
+        }
+        
+        public String getdataFim(){
+            return dataFim;
+        }
+        public void setdataFim(String dataFim){
+            this.dataFim = dataFim;
+        }
+        
+        public int getqtdPessoas(){
+            return qtdPessoas;
+        }
+        public void setqtdPessoas(int qtdPessoas){
+            this.qtdPessoas = qtdPessoas;
+        }
+
+}
