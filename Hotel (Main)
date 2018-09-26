@@ -1,0 +1,37 @@
+public class Hotel {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        
+        Cliente c1 = new Cliente();
+        Hospedagem c2 = new Hospedagem();
+        Chale c3 = new Chale();       
+
+        
+        c1.setNome("Rodrigo");
+        c1.setId(1014);
+        c1.setWhatsapp("90101-0101");
+        c1.setEndereco("Rio Branco");
+        c1.setCpf("000"); 
+        
+        c2.setId(1014);
+        c2.setHospede(c1);
+        c2.setQuarto(c3);
+        c2.setdataIni("01/10/2018");
+        c2.setdataFim("08/10/2018");
+        c2.setqtdPessoas(3);
+        c2.setCliente(c1);
+        c2.setChale(c3);
+
+        c3.setId(1014);
+        c3.setCapacidade(5);
+        c3.setPreco(20);
+        c3.setDescricao("Teste Teste");
+        
+        c2.gerarResumoReserva();
+   
+    }    
+}
