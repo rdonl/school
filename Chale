@@ -1,8 +1,8 @@
 public class Chale {
-    private int id;
-    private int capacidade;
-    private double preco;
-    private String descricao;
+    public int id;
+    public int capacidade;
+    public double preco;
+    public String descricao;
     
     
         public int getId(){
