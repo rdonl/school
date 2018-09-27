@@ -1,34 +1,35 @@
-public class Hotel {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        Scanner L = new Scanner(System.in);
+            
         Cliente c1 = new Cliente();
         Hospedagem c2 = new Hospedagem();
         Chale c3 = new Chale();       
 
-        
-        c1.setNome("Rodrigo");
+        System.out.println("Informe o nome de quem vai efetuar a reserva:");
+        c1.setNome(L.next());
         c1.setId(1014);
-        c1.setWhatsapp("90101-0101");
-        c1.setEndereco("Rio Branco");
-        c1.setCpf("000"); 
+        System.out.println("Informe seu número:");
+        c1.setWhatsapp(L.next());
+        System.out.println("Informe seu endereço:");
+        c1.setEndereco(L.next());
+        System.out.println("Informe seu CPF:");
+        c1.setCpf(L.next()); 
         
         c2.setId(1014);
         c2.setHospede(c1);
         c2.setQuarto(c3);
-        c2.setdataIni("01/10/2018");
-        c2.setdataFim("08/10/2018");
+        System.out.println("Informe a data de ínicio:");
+        c2.setdataIni(L.next());
+        System.out.println("Informe a data final:");
+        c2.setdataFim(L.next());
         c2.setqtdPessoas(3);
         c2.setCliente(c1);
         c2.setChale(c3);
 
         c3.setId(1014);
         c3.setCapacidade(5);
-        c3.setPreco(20);
+        c3.setPreco(600);
         c3.setDescricao("Teste Teste");
         
         c2.gerarResumoReserva();
